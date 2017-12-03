@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+
+            android:key="@string/notification"
+            android:summary="Notifications are On"
+            android:title="@string/notification" />
+
+    <Preference android:title="@string/privacy_policy"
+        android:key="@string/setting_privacy_policy">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.armsuntech.com/privacy-policy/" />
+    </Preference>
+    <Preference android:title="@string/terms_and_condition"
+        android:key="@string/setting_terms_and_condition">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.armsuntech.com/terms-and-conditions/" />
+    </Preference>
+    <Preference android:title="@string/about" android:key="@string/setting_about">
+        <intent
+            android:action="android.intent.action.VIEW"
+             />
+    </Preference>
+    <Preference android:title="@string/blocked_users" android:key="@string/blocked_users">
+        <intent
+            android:action="android.intent.action.VIEW"
+            />
+    </Preference>
+    <!--<Preference android:title="@string/disable_account"  android:key="@string/disable"></Preference>-->
+</PreferenceScreen>

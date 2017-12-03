@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/imgInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/message_white"
+        android:paddingTop="5dp"/>
+<Button
+    android:id="@+id/notif_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="28dp"
+    android:minHeight="28dp"
+    android:background="@drawable/shape_notification"
+    android:text="0"
+  android:layout_marginLeft="5dp"
+android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+    android:gravity="center"
+    android:padding="2dp"
+    android:singleLine="true">
+</Button>
+
+</FrameLayout>

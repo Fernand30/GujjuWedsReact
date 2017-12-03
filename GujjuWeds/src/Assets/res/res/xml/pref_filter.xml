@@ -1,0 +1,105 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sample="http://schemas.android.com/apk/res-auto">
+
+    <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+        android:defaultValue="100"
+        android:key="LOCATION"
+        android:summary="Search people within"
+        android:title="Location"
+        sample:msbp_dialogEnabled="false"
+        sample:msbp_interval="50"
+        sample:msbp_maxValue="10000"
+        sample:msbp_measurementUnit="KM"
+        sample:msbp_minValue="10" />
+
+
+
+    <Preference
+        android:key="Age"
+        android:title="Age"
+        />
+
+    <Preference
+        android:key="Height"
+        android:title="Height" />
+
+
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/complexion_array"
+        android:entryValues="@array/eight"
+        android:key="@string/pref_complexion_key"
+        android:title="@string/skin_complexion" />
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/religion_array"
+        android:entryValues="@array/twelve"
+        android:key="@string/pref_religion_key"
+        android:title="@string/religion" />
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/relationship_status_array"
+        android:entryValues="@array/four"
+        android:key="@string/pref_relation_key"
+        android:title="@string/relationship_status" />
+
+    <!--new-->
+    <!--<ListPreference-->
+    <!--style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"-->
+    <!--android:entries="@array/ethnicity_array"-->
+    <!--android:entryValues="@array/ten"-->
+    <!--android:key="@string/pref_ethnicity_key"-->
+    <!--android:title="@string/ethnicity"/>-->
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/body_array"
+        android:entryValues="@array/five"
+        android:key="@string/pref_bod_key"
+        android:title="@string/body" />
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/education_array"
+        android:entryValues="@array/fourteen"
+        android:key="@string/pref_education_key"
+        android:title="@string/education" />
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/occupation_array"
+        android:entryValues="@array/twenty"
+        android:key="@string/pref_occupation_key"
+        android:title="@string/occupation" />
+
+    <!--<ListPreference-->
+    <!--style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"-->
+    <!--android:entries="@array/salary_array"-->
+    <!--android:entryValues="@array/eight"-->
+    <!--android:key="@string/pref_salary_key"-->
+    <!--android:title="@string/salary"/>-->
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/smoke_array"
+        android:entryValues="@array/five"
+        android:key="@string/pref_smoke_key"
+        android:title="@string/smoke" />
+
+    <!--<ListPreference-->
+    <!--style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"-->
+    <!--android:entries="@array/sports_array"-->
+    <!--android:entryValues="@array/four_twenty"-->
+    <!--android:key="@string/pref_sports_key"-->
+    <!--android:title="@string/sports"/>-->
+
+    <ListPreference
+        style="@style/Preference.Material.DialogPreference.ListPreference.SimpleMenu"
+        android:entries="@array/often_sports_array"
+        android:entryValues="@array/five"
+        android:key="@string/pref_often_sports_key"
+        android:title="@string/often_exercise" />
+</PreferenceScreen>

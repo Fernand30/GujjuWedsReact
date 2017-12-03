@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_left_age">10dp</dimen>
+    <dimen name="margin_left_name">10dp</dimen>
+    <dimen name="margin_left_education">10dp</dimen>
+    <dimen name="text_size_title">25dp</dimen>
+    <dimen name="text_size_medium_plus">22dp</dimen>
+    <dimen name="title_small_text">18dp</dimen>
+    <dimen name="age_text_size">18dp</dimen>
+</resources>

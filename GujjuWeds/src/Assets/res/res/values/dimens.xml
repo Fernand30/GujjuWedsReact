@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="max_image">220dp</dimen>
+    <dimen name="default_elevation">8dp</dimen>
+    <dimen name="publish_photo_thumbnail_size">96dp</dimen>
+
+    <dimen name="global_menu_avatar_size">64dp</dimen>
+    <dimen name="search_view_inset">5dp</dimen>
+    <dimen name="divider_margin">1dp</dimen>
+    <dimen name="item_divider">5dp</dimen>
+    <dimen name="margin_left_age">10dp</dimen>
+    <dimen name="margin_left_name">10dp</dimen>
+    <dimen name="margin_left_education">10dp</dimen>
+    <dimen name="text_size_title">25dp</dimen>
+    <dimen name="text_size_medium_plus">22dp</dimen>
+    <dimen name="title_small_text">18dp</dimen>
+    <dimen name="age_text_size">18dp</dimen>
+</resources>

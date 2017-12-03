@@ -1,0 +1,19 @@
+<!--menu_main.xml-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+<item
+    android:id="@+id/action_inbox"
+    android:orderInCategory="1"
+    app:showAsAction="always"
+    android:actionLayout="@layout/inbox_update_count"
+    android:title="@string/inbox"></item>
+
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="1"
+        android:icon="@drawable/filter_list_white"
+        app:showAsAction="always"
+        android:title="@string/filter"></item>
+</menu>

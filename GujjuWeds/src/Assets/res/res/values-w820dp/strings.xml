@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="min_eighteen">You have to be minimum 18 years old in order to use this application!</string>
+    <string name="edit_photoes">Edit Photos</string>
+    <string name="contact_us">Contact us :)</string>
+    <string name="feedback_explaination">You can tell us everything. Any suggestions. Any problems! Consider us your friends! :)</string>
+    <string name="email_us">Email us</string>
+</resources>

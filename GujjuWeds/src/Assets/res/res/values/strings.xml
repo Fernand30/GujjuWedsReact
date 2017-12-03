@@ -1,0 +1,581 @@
+<resources>
+    <string name="app_name">GujjuWeds - Matrimonial App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="welcome_screen_text">Welcome To InstaR</string>
+    <string name="explore_button_text">Explore</string>
+    <string name="sign_up_text">Sign up</string>
+
+    <string name="facebook_application_id" translatable="false">1213412715423000</string>
+    <string name="google_key" translatable="false">AIzaSyBbbsM3kTMzkyD2dYITxHgbBrA9JvnJiuI</string>
+
+    <string name="unknown_response">Unexpected onActivityResult response code</string>
+    <string name="unknown_sign_in_response">Unknown response from AuthUI sign-in</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="error_anonymously">Unable to sign in anonymously.</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="save_changes">Save</string>
+    <string name="change_image">Upload Photo</string>
+    <string name="name">Full Name</string>
+    <string name="user_name">User Name</string>
+    <string name="anonymous_user">Anonymous User</string>
+    <string name="profile_pic_chooser_title">Choose your new Pic</string>
+    <string name="camera_permission">We will upload a picture from your Camera</string>
+    <string name="error_upload_pic">Error upload pic</string>
+    <string name="image_required">You must choose photo.</string>
+    <string name="user_name_exist">User Name Already Exist</string>
+    <string name="photo_changed_success">Photo Changed Successfully</string>
+    <string name="photo_changed_umsuccess">Problem while change photo</string>
+    <string name="error_occured">Error Occurred</string>
+    <string name="error_create_profile">Error create new profile</string>
+    <string name="profile_created">Profile Created</string>
+    <string name="error_edit_profile">Error editing</string>
+    <string name="profile_edited">Profile Edited</string>
+    <string name="caption">Add caption</string>
+    <string name="add_location">Add location</string>
+    <string name="share">SHARE</string>
+    <string name="feeds">My Feeds</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="log_out">Log out</string>
+    <string name="log_out_action">Confirm Log Out?</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="age_hint">Age</string>
+    <string name="about_me">About me</string>
+    <string name="choose_default_image">Selected Green = Profile Picture</string>
+    <string name="edit_pictures">Edit Pictures</string>
+    <string name="upload_image_first">Click on Arrow to Upload Photo</string>
+    <string name="inbox">Inbox</string>
+    <string name="title_activity_inbox">InboxActivity</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+    <string name="message">Message</string>
+    <string name="user_image">User image</string>
+    <string name="contacts">Contacts</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_conversion">ConversionActivity</string>
+    <string name="write_message">Write message here...</string>
+    <string name="failed_message">Failed to send message</string>
+    <string name="user_name_spaces">User Name can\'t have spaces</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="skin_complexion">Skin complexion</string>
+    <string name="religion">Religion</string>
+    <string name="home">Home</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="relationship_status">Relationship status</string>
+    <string name="body">Body Type</string>
+    <string name="occupation">Occupation</string>
+    <string name="education">Education</string>
+    <string name="salary">Salary</string>
+    <string name="smoke">Smoke?</string>
+    <string name="drink">Drink?</string>
+    <string name="kids">Kids?</string>
+    <string name="diet">Diet type</string>
+    <string name="sports">Sports</string>
+    <string name="often_exercise">Often Exercise</string>
+    <string name="pets">Pets?</string>
+    <string name="political">Political view</string>
+    <string name="languages">Languages</string>
+    <string name="choose">Choose</string>
+    <string name="choose_languges">Choose Languages</string>
+
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="tall">Height</string>
+    <string name="any">Any</string>
+    <string name="tall_feet">Height Feet</string>
+    <string name="tall_inches">Height Inches</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="years">Years</string>
+    <string name="filter">Filters</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="pref_location_key">LOCATION</string>
+    <string name="pref_location_title">Search Location</string>
+    <string name="location_required">Please choose your current location first</string>
+    <string name="pref_age_key_min">filter_age_min</string>
+    <string name="pref_age_key_max">filter_age_max</string>
+    <string name="pref_height_key_min">filter_height_min</string>
+    <string name="pref_height_key_max">filter_height_max</string>
+    <string name="pref_height_key_inch_min">filter_height_inch_min</string>
+    <string name="pref_height_key_inch_max">filter_height_inch_max</string>
+    <string name="pref_age_title">Age</string>
+    <string name="pref_complexion_key">complexion_filter</string>
+    <string name="pref_religion_key">religion_filter</string>
+    <string name="pref_relation_key">relation_status_filter_key</string>
+    <!--<string name="pref_ethnicity_key">ethnicity_key</string>-->
+    <string name="pref_bod_key">body_key</string>
+    <string name="pref_education_key">education_key</string>
+    <string name="pref_occupation_key">occupation_key</string>
+    <!--<string name="pref_salary_key">salary_key</string>-->
+    <string name="pref_smoke_key">smoke_key</string>
+    <!--<string name="pref_sports_key">sports_key</string>-->
+    <string name="pref_often_sports_key">often_sport_key</string>
+    <string name="rate_and_update">Rate And Update</string>
+    <string name="share_with_friends">Help your Single Friends ;)</string>
+    <string name="invitation_title">Try GujjuWeds for life partner</string>
+    <string name="invitation_message">Find your Gujarati life partner at - GujjuWeds</string>
+    <string name="invitation_deep_link">https://x7f2x.app.goo.gl/XktS</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="terms_and_condition">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="notification">Notification</string>
+    <string name="disable_account">Disable Account</string>
+    <string name="disable">disable</string>
+    <string name="min_eighteen">You have to be minimum 18 years old in order to use this application!</string>
+    <string name="loading">Be Nice :) ..</string>
+    <string name="setting_privacy_policy">setting_privacy_policy_key</string>
+    <string name="setting_terms_and_condition">settings_terms_and_condition_key</string>
+    <string name="setting_about">settings_about_key</string>
+    <string name="edit_photoes">Edit Photos</string>
+    <string name="contact_us">Contact us :)</string>
+    <string name="feedback_explaination">You can tell us everything. Any suggestions. Any problems! Consider us your friends! :)</string>
+    <string name="email_us">Email us</string>
+    <string name="change_filter">No matches with selected Filter. Change Filter.</string>
+    <string name="required_field">Require field!</string>
+    <string name="block">Block</string>
+    <string name="delete_chat">Delete Chat</string>
+    <string name="location">Location</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="complexion_array">
+        <item>Fair</item>
+        <item>Wheatish or genhua</item>
+        <item>Brown</item>
+        <item> Dark or saanwla</item>
+    </string-array>
+
+    <string-array name="religion_array">
+        <item>Hindu</item>
+        <item>Muslim - Shia</item>
+        <item>Muslim - Sunni</item>
+        <item>Muslim - Others</item>
+        <item>Jain - Digambar</item>
+        <item>Jain - Shwetambar</item>
+        <item>Jain - Others</item>
+        <item>Christian</item>
+        <item>Sikh</item>
+        <item>Parsi</item>
+        <item>Buddhist</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="relationship_status_array">
+        <item>Never Married</item>
+        <item>Currently Separated</item>
+        <item>Divorced</item>
+        <item>Widow / Widower</item>
+    </string-array>
+
+    <!--<string-array name="ethnicity_array">-->
+    <!--<item>No answer</item>-->
+    <!--<item>Asian</item>-->
+    <!--<item>Black / African descent</item>-->
+    <!--<item>East Indian</item>-->
+    <!--<item>Latino / Hispanic</item>-->
+    <!--<item>Middle Eastern</item>-->
+    <!--<item>Native American</item>-->
+    <!--<item>Pacific Islander</item>-->
+    <!--<item>White / Caucasian</item>-->
+    <!--<item>Other</item>-->
+    <!--</string-array>-->
+    <!--need to decide-->
+    <string-array name="body_array">
+        <item>Slim</item>
+        <item>Athletic</item>
+        <item>Average</item>
+        <item>A few extra pounds</item>
+        <item>Chubby</item>
+    </string-array>
+
+    <string-array name="education_array">
+        <item>Doesn\'t Matter/ Any</item>
+        <item>High school</item>
+        <item>Bachelors Student</item>
+        <item>Masters Student</item>
+        <item>Ph.D / Doctorate Student</item>
+        <item>Bachelors in Engineering</item>
+        <item>Bachelors in Management/Legal/Accounting</item>
+        <item>Bachelors in Medical</item>
+        <item>Masters in Engineering</item>
+        <item>Masters in Management/Legal/Accounting</item>
+        <item>Masters in Medical</item>
+        <item>Bachelors in Others</item>
+        <item>Masters in Others</item>
+        <item>Ph.D / Doctorate</item>
+    </string-array>
+
+    <string-array name="occupation_array">
+        <item>Student</item>
+        <item>Not Working at the Moment</item>
+        <item>Administrative / Secretarial</item>
+        <item>Artistic / Creative / Performance</item>
+        <item>Executive / Management</item>
+        <item>Financial / Accounting / Real Estate</item>
+        <item>Labor / Construction</item>
+        <item>Medical / Dental / Veterinary / Fitness</item>
+        <item>Political / Govt / Civil Service / Military</item>
+        <item>Retail / Food services Retired</item>
+        <item>Sales / Marketing</item>
+        <item>Self-Employed / Entrepreneur</item>
+        <item>Education / Teacher / Professor</item>
+        <item>Technical / Science / Computers / Engineering</item>
+        <item>Travel / Hospitality / Transportation</item>
+        <item>Other profession</item>
+        <item>Nonprofit / Volunteer / Activist</item>
+        <item>Law enforcement / Security / Military</item>
+        <item>Fashion / Model / Beauty</item>
+        <item>Architecture / Interior design</item>
+    </string-array>
+
+    <!--not necessary for now-->
+    <!--<string-array name="salary_array">-->
+    <!--<item>No Preference</item>-->
+    <!--<item>Less Than $25,000</item>-->
+    <!--<item>$25,001 to $35,000</item>-->
+    <!--<item>$35,001 to $50,000</item>-->
+    <!--<item>$50,001 to $75,000</item>-->
+    <!--<item>$75,001 to $100,000</item>-->
+    <!--<item>$100,001 to $150,000</item>-->
+    <!--<item>$150,001+</item>-->
+    <!--</string-array>-->
+
+    <string-array name="smoke_array">
+        <item>No Way</item>
+        <item>Occasionally</item>
+        <item>Daily</item>
+        <item>Cigar aficionado</item>
+        <item>Yes, but trying to quit</item>
+    </string-array>
+
+    <!--<string-array name="sports_array">-->
+    <!--<item>No answer</item>-->
+    <!--<item>Aerobics</item>-->
+    <!--<item>Auto racing / Motorcross</item>-->
+    <!--<item>Baseball</item>-->
+    <!--<item>Basketball</item>-->
+    <!--<item>Billiards / Pool</item>-->
+    <!--<item>Bowling</item>-->
+    <!--<item>Cycling</item>-->
+    <!--<item>Football</item>-->
+    <!--<item>Golf</item>-->
+    <!--<item>Dancing</item>-->
+    <!--<item>Inline skating</item>-->
+    <!--<item>Martial arts</item>-->
+    <!--<item>Running</item>-->
+    <!--<item>Skiing</item>-->
+    <!--<item>Soccer</item>-->
+    <!--<item>Swimming</item>-->
+    <!--<item>Tennis / Racquet sports</item>-->
+    <!--<item>Walking / Hiking</item>-->
+    <!--<item>Weights / Machines</item>-->
+    <!--<item>Yoga</item>-->
+    <!--<item>Other types of exercise</item>-->
+    <!--<item>Hockey</item>-->
+    <!--<item>VolleyBall</item>-->
+    <!--</string-array>-->
+
+    <string-array name="often_sports_array">
+        <item>I don\'t exercise</item>
+        <item>I exercise occasionally/randomly</item>
+        <item>I exercise 1-2 times per week</item>
+        <item>I exercise 3-4 times per week</item>
+        <item>I exercise 5 or more times per week</item>
+    </string-array>
+    <!--last one-->
+    <string-array name="drink_array">
+        <item>Never</item>
+        <item>Social Drinker</item>
+        <item>Regularly</item>
+        <item>Moderately</item>
+    </string-array>
+
+    <string-array name="feet_array">
+        <item>3 feet</item>
+        <item>4 feet</item>
+        <item>5 feet</item>
+        <item>6 feet</item>
+        <item>7 feet</item>
+        <item>8 feet</item>
+    </string-array>
+
+    <string-array name="inches_array">
+        <item>0 inches</item>
+        <item>1 inch</item>
+        <item>2 inches</item>
+        <item>3 inches</item>
+        <item>4 inches</item>
+        <item>5 inches</item>
+        <item>6 inches</item>
+        <item>7 inches</item>
+        <item>8 inches</item>
+        <item>9 inches</item>
+        <item>10 inches</item>
+        <item>11 inches</item>
+    </string-array>
+
+
+    <string-array name="kids_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="diet_array">
+        <item>Veg</item>
+        <item>Non-Veg</item>
+        <item>Occasionally Non-Veg</item>
+        <item>Eggetarian</item>
+        <item>Vegan</item>
+    </string-array>
+
+    <!--<string-array name="languages_array">-->
+    <!--<item>Arabic</item>-->
+    <!--<item>Chinese</item>-->
+    <!--<item>Dutch</item>-->
+    <!--<item>English</item>-->
+    <!--<item>French</item>-->
+    <!--<item>German</item>-->
+    <!--<item>Hebrew</item>-->
+    <!--<item>Hindi</item>-->
+    <!--<item>Italian</item>-->
+    <!--<item>Japanese</item>-->
+    <!--<item>Korean</item>-->
+    <!--<item>Norwegian</item>-->
+    <!--<item>Portuguese</item>-->
+    <!--<item>Russian</item>-->
+    <!--<item>Spanish</item>-->
+    <!--<item>Swedish</item>-->
+    <!--<item>Tagalog</item>-->
+    <!--<item>Urdu</item>-->
+    <!--<item>Other</item>-->
+    <!--</string-array>-->
+
+    <string-array name="pets_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <!--<string-array name="political_array">-->
+    <!--<item>No answer</item>-->
+    <!--<item>Ultra Conservative</item>-->
+    <!--<item>Conservative</item>-->
+    <!--<item>Middle of the Road</item>-->
+    <!--<item>Liberal</item>-->
+    <!--<item>Very Liberal</item>-->
+    <!--<item>Non-conformist</item>-->
+    <!--<item>Some other viewpoint</item>-->
+    <!--</string-array>-->
+
+    <!--filter strings-->
+    <string-array name="pref_location_content_titles_long">
+        <item>Profile Location</item>
+        <item>Custom Location</item>
+    </string-array>
+
+
+    <string-array name="pref_age_content_titles_long">
+        <item>Any</item>
+        <item>18-22 years</item>
+        <item>23-26 years</item>
+        <item>27-30 years</item>
+        <item>31-34 years</item>
+        <item>35-38 years</item>
+        <item>39-42 years</item>
+        <item>more than 42</item>
+    </string-array>
+
+    <string-array name="two">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="three">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="four">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="five">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="six">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="seven">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="eight">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="nine">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="ten">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="twelve">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+
+    </string-array>
+    <string-array name="fourteen">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+
+    </string-array>
+    <string-array name="nine_ten">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </string-array>
+    <string-array name="twenty">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="four_twenty">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+</resources>

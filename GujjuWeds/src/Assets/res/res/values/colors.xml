@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base color-->
+    <color name="colorPrimary">#8B0000</color>
+    <color name="colorPrimaryDark">#800000</color>
+    <color name="colorPrimaryLight">#c43c3c</color>
+    <color name="colorPrimaryLighter">#c43c3c</color>
+    <color name="colorAccent">#DC143C</color>
+    <color name="primary_text">#262626</color>
+    <!--<color name="secondary_text">#FFFFFF</color>-->
+    <color name="fab_color_pressed">#007787</color>
+    <color name="text_highlight">#09d8f4</color>
+
+    <!--edit profile-->
+    <!--<color name="editProfileDark">#FFFFFF</color>-->
+    <color name="editProfilePrimary">#FFF8F6</color>
+    <!--<color name="editProfilePrimary">#FFFFFF</color>-->
+    <!--<color name="editProfilePrimary">#FFFFFF</color>-->
+    <color name="editProfile_icon">#bfbfbf</color>
+
+    <!--publish post-->
+    <color name="publish_text">#262626</color>
+
+    <!--other colors-->
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#c45454</color>
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="overlay">#55000000</color>
+    <color name="green_circle">#5EF30F</color>
+
+</resources>

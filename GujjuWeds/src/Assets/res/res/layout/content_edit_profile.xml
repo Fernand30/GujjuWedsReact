@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:descendantFocusability="beforeDescendants"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.armsuntech.gujjuweds.Activities.EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:columnCount="2"
+            app:rowCount="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/profile_image"
+
+
+                    app:layout_gravity="fill_horizontal" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:id="@+id/edit_images"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/ic_linked_camera_white_24dp" />
+                <!--User image-->
+
+            </RelativeLayout>
+            <!--Change photo-->
+            <TextView
+                android:id="@+id/change_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="@string/edit_pictures"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/editProfilePrimary"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <!--<android.support.v4.widget.Space-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_height="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--/>-->
+
+            <!--full name-->
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:fontFamily="sans-serif"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/editProfilePrimary"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <View
+
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="2" />
+
+            <!--user name-->
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:fontFamily="sans-serif"
+                android:hint="@string/user_name"
+                android:inputType="text"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/editProfilePrimary"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="2" />
+
+            <!--user Email-->
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:focusable="false"
+                android:fontFamily="sans-serif"
+
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/editProfilePrimary"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2" />
+
+            <!--user location-->
+            <LinearLayout
+
+                android:id="@+id/add_location_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--add location text-->
+
+                <TextView
+
+                    android:id="@+id/add_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.6"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/add_location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <LinearLayout
+                    android:id="@+id/ly_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:orientation="horizontal">
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="or"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/editProfilePrimary" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/add_location_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.1"
+
+                    android:fontFamily="sans-serif"
+
+                    android:src="@drawable/ic_my_location_white_24dp"
+                    android:text="Set current location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/editProfilePrimary"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/clear_location"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.1"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="3"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+                <!--user age-->
+                <EditText
+                    android:id="@+id/user_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/age_hint"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/editProfilePrimary"
+                    app:layout_columnSpan="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+
+                <!--user gender text-->
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/gender_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/gender"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user gender-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/gender_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="1" />
+
+            <!--tall spinner-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="3"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="3">
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:fontFamily="sans-serif"
+
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/height"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user tall feet-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/feet_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+
+                <!--user inches  spin-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/inches_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+                <!--user relationship status text-->
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/relationship_status_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:text="@string/relationship_status"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user relationship status-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/relationship_status_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:descendantFocusability="beforeDescendants"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="1" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user complexion text-->
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/complexion_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/skin_complexion"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user Complexion-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/skin_complexion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+
+                <!--user religion text-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/religion_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/religion"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user religion-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/religion_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+            <!--<View-->
+            <!--android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="1"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"-->
+            <!--/>-->
+
+
+            <!--<LinearLayout-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:weightSum="2">-->
+
+
+            <!--&lt;!&ndash;user ethnicity text&ndash;&gt;-->
+            <!--<me.grantland.widget.AutofitTextView-->
+            <!--android:id="@+id/ethnicity_text"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".8"-->
+            <!--android:text="@string/ethnicity"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@color/editProfilePrimary"-->
+            <!--/>-->
+
+            <!--&lt;!&ndash;user ethnicity&ndash;&gt;-->
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_weight="1.2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/ethnicity_spin"-->
+            <!--app:layout_columnSpan="1"-->
+            <!--app:layout_column="1"-->
+            <!--app:layout_gravity="fill_horizontal"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user body type text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/body"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user body type-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/body_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user ethnicity text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/education"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user education-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/education_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user occupation text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/occupation"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user occupation type-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/occupation_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+            <!--<LinearLayout-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:weightSum="2">-->
+
+
+            <!--&lt;!&ndash;user salary  text&ndash;&gt;-->
+            <!--<me.grantland.widget.AutofitTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".8"-->
+            <!--android:text="@string/salary"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@color/editProfilePrimary"-->
+            <!--/>-->
+
+            <!--&lt;!&ndash;user salary &ndash;&gt;-->
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_weight="1.2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/salary_spin"-->
+            <!--app:layout_columnSpan="1"-->
+            <!--app:layout_column="1"-->
+            <!--app:layout_gravity="fill_horizontal"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="1"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"-->
+            <!--/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user smoke text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/smoke"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user smoke type-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/smoke_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user drink  text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/drink"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user drink -->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/drink_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user kids text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/kids"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user kids type-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/kids_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user Diet   text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/diet"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user Diet  -->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/diet_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+            <!--<LinearLayout-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:weightSum="2">-->
+
+
+            <!--&lt;!&ndash;user sports text&ndash;&gt;-->
+            <!--<me.grantland.widget.AutofitTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".8"-->
+            <!--android:text="@string/sports"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@color/editProfilePrimary"-->
+            <!--/>-->
+
+            <!--&lt;!&ndash;user sports type&ndash;&gt;-->
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_weight="1.2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/sports_spin"-->
+            <!--app:layout_columnSpan="1"-->
+            <!--app:layout_column="1"-->
+            <!--app:layout_gravity="fill_horizontal"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="1"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user often_exercise   text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/often_exercise"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user often_exercise  -->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/often_exercise_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="2">
+
+
+                <!--user pets text-->
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/pets"
+                    android:textColor="@color/editProfilePrimary" />
+
+                <!--user pets type-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/pets_spin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:spinnerMode="dialog"
+                    app:layout_column="1"
+                    app:layout_columnSpan="1"
+                    app:layout_gravity="fill_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+            <!--<LinearLayout-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:weightSum="2">-->
+
+            <!--&lt;!&ndash;user political   text&ndash;&gt;-->
+            <!--<me.grantland.widget.AutofitTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".8"-->
+            <!--android:text="@string/political"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@color/editProfilePrimary"-->
+            <!--/>-->
+
+            <!--&lt;!&ndash;user political  &ndash;&gt;-->
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_weight="1.2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/political_spin"-->
+            <!--app:layout_columnSpan="1"-->
+            <!--app:layout_column="1"-->
+            <!--app:layout_gravity="fill_horizontal"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="1"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"-->
+            <!--/>-->
+            <!--<LinearLayout-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:weightSum="2">-->
+
+
+            <!--&lt;!&ndash;user languages text&ndash;&gt;-->
+            <!--<me.grantland.widget.AutofitTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".8"-->
+            <!--android:text="@string/languages"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@color/editProfilePrimary"-->
+            <!--/>-->
+
+            <!--user languges type-->
+            <!--<TextView-->
+            <!--android:id="@+id/change_languages"-->
+            <!--android:layout_weight="1.2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+            <!--android:textColor="@color/editProfilePrimary"-->
+            <!--app:layout_columnSpan="2"-->
+            <!--app:layout_columnWeight="1"-->
+            <!--app:layout_gravity="fill_horizontal"-->
+            <!--android:text="@string/choose" />-->
+
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+
+                app:layout_columnWeight="1" />
+            <!--about me-->
+            <EditText
+                android:id="@+id/user_about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:fontFamily="sans-serif"
+                android:hint="@string/about_me"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="300"
+                android:maxLines="4"
+                android:scrollHorizontally="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/editProfilePrimary"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+                android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+                android:background="@color/divider"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1" />
+
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+</ScrollView>

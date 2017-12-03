@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'GujjuWeds' do
+  pod 'Google/SignIn'
+  pod 'Firebase'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'TwitterCore'
+  pod 'TwitterKit'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/AdMob'
+  pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
+end
